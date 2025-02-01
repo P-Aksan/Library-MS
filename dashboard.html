@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Library Management System</h2>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Add New Book</h3>
+    <form id="bookForm">
+        <input type="text" id="bookName" placeholder="Book Name" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <h3>Book List</h3>
+    <table border="1" id="bookTable">
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
